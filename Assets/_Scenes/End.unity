@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Start Scene
+  m_text: 'End Scene
 
 '
   m_isRightToLeft: 0
@@ -382,7 +382,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Start
+  m_text: 'Restart
 
 '
   m_isRightToLeft: 0
@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 1287009174}
   - component: {fileID: 1287009177}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -628,7 +628,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1287009177}
-        m_TargetAssemblyTypeName: StartButtonBehaviour, Assembly-CSharp
+        m_TargetAssemblyTypeName: RestartButtonBehaviour, Assembly-CSharp
         m_MethodName: OnPressedButton
         m_Mode: 1
         m_Arguments:
@@ -686,7 +686,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1287009172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee0855d07a6bece4cb37a795a9972577, type: 3}
+  m_Script: {fileID: 11500000, guid: 9442a9df53aed22459a23c654e02aea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2067205066
