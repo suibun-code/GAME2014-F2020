@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class TestButtonBehaviour : MonoBehaviour
 {
-    public TMP_Text SceneLabel;
+    public TMP_Text LivesLabel;
+    public TMP_Text ScoreLabel;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,7 @@ public class TestButtonBehaviour : MonoBehaviour
     public void OnPressedButton()
     {
         Debug.Log("StartButton Pressed");
-        SceneLabel.text = "test";
+        LivesLabel.rectTransform.anchoredPosition = new Vector2(370.0f, -83.0f);
+        ScoreLabel.rectTransform.anchoredPosition = new Vector2(-353.0f, -83.0f);
     }
 }
