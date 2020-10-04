@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*
+Source File Name: RestartButtonBehaviour.cs
+Author: Ramin Amiri
+Date Last Modified: 2020-10-04 11:12AM
+
+Program Description: This script gives functionality to the RestartButton.
+
+Revision Histroy: Initial.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

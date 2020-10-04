@@ -1,4 +1,15 @@
-﻿using System.Collections;
+﻿/*
+Source File Name: SafeAreaFitter.cs
+Author: Ramin Amiri
+Date Last Modified: 2020-10-04 11:12AM
+
+Program Description: This script makes sure all elements which need to stay within the safe area of the device,
+stay within that area and are positioned accordingly.
+
+Revision Histroy: Initial.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
