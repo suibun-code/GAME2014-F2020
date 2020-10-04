@@ -153,7 +153,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 770271389}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -449,7 +449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6433587886082911435, guid: 563f36d6e38e0974fb26283126f116b6, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6433587886082911435, guid: 563f36d6e38e0974fb26283126f116b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -547,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 236577492233469234, guid: 1b59cb52703b0ea4a8e5147dfbf0557e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 236577492233469234, guid: 1b59cb52703b0ea4a8e5147dfbf0557e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -697,6 +697,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 2078105683}
   - {fileID: 770271389}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -706,6 +707,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!224 &2078105683 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1904804980230899568, guid: 6db2be2213820ac47a430516e77fe32e, type: 3}
+  m_PrefabInstance: {fileID: 1904804980706987173}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2078717693
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,12 +742,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 770271389}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 580.79}
-  m_SizeDelta: {x: 1440, y: 160}
+  m_AnchoredPosition: {x: 0, y: 643}
+  m_SizeDelta: {x: 1440, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2078717695
 MonoBehaviour:
@@ -767,7 +773,8 @@ MonoBehaviour:
 
 
     Win the game by getting your character to the end of
-    the level. Defeat enemies in your path and do not reach 0 health.
+    the level. Defeat enemies in your path and do not reach 0 health. Collected pick-ups
+    for points & bonuses.
 
 
 '
@@ -833,7 +840,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -1831.278}
+  m_margin: {x: 0, y: 0, z: 0, w: -254.21922}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -852,7 +859,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 770271389}
+    m_TransformParent: {fileID: 2067205070}
     m_Modifications:
     - target: {fileID: 1904804980230899568, guid: 6db2be2213820ac47a430516e77fe32e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -908,11 +915,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1904804980230899568, guid: 6db2be2213820ac47a430516e77fe32e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1340
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1904804980230899568, guid: 6db2be2213820ac47a430516e77fe32e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 2460
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1904804980230899568, guid: 6db2be2213820ac47a430516e77fe32e, type: 3}
       propertyPath: m_AnchorMin.x
