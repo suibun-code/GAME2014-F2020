@@ -15,20 +15,22 @@ using UnityEngine;
 
 [RequireComponent(typeof(RectTransform))]
 public class SafeAreaFitter : MonoBehaviour
-{    
-    Rect LastSafeArea = new Rect(0, 0, 0, 0);
-    RectTransform Panel;
+{
+    Rect LastSafeArea = new Rect(0, 0, 0, 0); //The last safe area that is not updated.
+    RectTransform ObjectTransform; //The RectTransform representing the component from the appropriate GameObject.
 
     // Start is called before the first frame update
     void Start()
     {
-        Panel = GetComponent<RectTransform> ();
-        Refresh ();
+        //Get the RectTransform component from the appropriate GameObject.
+        ObjectTransform = GetComponent<RectTransform>();
+        Refresh();
     }
 
-    // Update is called once per frame
+    // Update is called once per frame. 
     void Update()
     {
+        //If the screen orientation is changed, refresh. This is done to not refresh the safe area on non-occurences.
         switch (Screen.orientation)
         {
             case ScreenOrientation.Portrait:
@@ -41,41 +43,35 @@ public class SafeAreaFitter : MonoBehaviour
                 Refresh();
                 break;
             case ScreenOrientation.Unknown:
-                Refresh();
                 break;
             default:
-                Refresh();
                 break;
         }
     }
 
-        void Refresh()
+    void Refresh()
     {
-        Rect safeArea = GetSafeArea();
+        //Assign a new safe area.
+        Rect safeArea = Screen.safeArea;
 
+        //If the safe area ia new, re-assign it.
         if (safeArea != LastSafeArea)
-        {
             ApplySafeArea(safeArea);
-        }
     }
 
-    public Rect GetSafeArea()
+    public void ApplySafeArea(Rect rect)
     {
-        return Screen.safeArea;
-    }
+        //Assign the new safe area as the last safe area; updating it.
+        LastSafeArea = rect;
 
-    public void ApplySafeArea(Rect r)
-    {
-        LastSafeArea = r;
-
-            // Convert safe area rectangle from absolute pixels to normalised anchor coordinates
-            Vector2 anchorMin = r.position;
-            Vector2 anchorMax = r.position + r.size;
-            anchorMin.x /= Screen.width;
-            anchorMin.y /= Screen.height;
-            anchorMax.x /= Screen.width;
-            anchorMax.y /= Screen.height;
-            Panel.anchorMin = anchorMin;
-            Panel.anchorMax = anchorMax;
+        //Convert safe area rectangle from absolute pixels to normalised anchor coordinates.
+        Vector2 anchorMin = rect.position;
+        Vector2 anchorMax = rect.position + rect.size;
+        anchorMin.x /= Screen.width;
+        anchorMin.y /= Screen.height;
+        anchorMax.x /= Screen.width;
+        anchorMax.y /= Screen.height;
+        ObjectTransform.anchorMin = anchorMin;
+        ObjectTransform.anchorMax = anchorMax;
     }
 }
