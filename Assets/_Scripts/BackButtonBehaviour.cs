@@ -15,6 +15,8 @@ using UnityEngine.SceneManagement;
 
 public class BackButtonBehaviour : MonoBehaviour
 {
+    public AudioSource btnSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +35,10 @@ public class BackButtonBehaviour : MonoBehaviour
         Debug.Log("BackButton Pressed");
 
         SceneManager.LoadScene("Start");
+    }
+
+    public void playSound()
+    {
+        btnSound.Play();
     }
 }

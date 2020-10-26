@@ -15,6 +15,8 @@ using UnityEngine.SceneManagement;
 
 public class EndButtonBehaviour : MonoBehaviour
 {
+    public AudioSource btnSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +35,10 @@ public class EndButtonBehaviour : MonoBehaviour
         Debug.Log("EndButton Pressed");
 
         SceneManager.LoadScene("End");
+    }
+
+    public void playSound()
+    {
+        btnSound.Play();
     }
 }

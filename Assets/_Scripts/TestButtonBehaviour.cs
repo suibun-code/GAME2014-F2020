@@ -15,6 +15,8 @@ using UnityEngine;
 
 public class TestButtonBehaviour : MonoBehaviour
 {
+    public AudioSource btnSound;
+
     public TMP_Text LivesLabel;
     public TMP_Text ScoreLabel;
     // Start is called before the first frame update
@@ -35,5 +37,10 @@ public class TestButtonBehaviour : MonoBehaviour
         Debug.Log("StartButton Pressed");
         LivesLabel.rectTransform.anchoredPosition = new Vector2(370.0f, -83.0f);
         ScoreLabel.rectTransform.anchoredPosition = new Vector2(-353.0f, -83.0f);
+    }
+
+    public void playSound()
+    {
+        btnSound.Play();
     }
 }

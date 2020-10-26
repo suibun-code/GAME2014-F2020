@@ -15,6 +15,8 @@ using UnityEngine.SceneManagement;
 
 public class InstructionsButtonBehaviour : MonoBehaviour
 {
+    public AudioSource btnSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +35,10 @@ public class InstructionsButtonBehaviour : MonoBehaviour
         Debug.Log("InstructionsButton Pressed");
 
         SceneManager.LoadScene("Instructions");
+    }
+
+    public void playSound()
+    {
+        btnSound.Play();
     }
 }

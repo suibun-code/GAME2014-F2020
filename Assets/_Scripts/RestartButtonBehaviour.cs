@@ -15,6 +15,8 @@ using UnityEngine.SceneManagement;
 
 public class RestartButtonBehaviour : MonoBehaviour
 {
+    public AudioSource btnSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +35,10 @@ public class RestartButtonBehaviour : MonoBehaviour
         Debug.Log("RestartButton Pressed");
 
         SceneManager.LoadScene("Play");
+    }
+
+    public void playSound()
+    {
+        btnSound.Play();
     }
 }
