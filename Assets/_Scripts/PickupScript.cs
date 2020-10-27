@@ -1,13 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
-public class ScoreLabel : MonoBehaviour
+public class PickupScript : MonoBehaviour
 {
-    public GameObject player;
-    public TMP_Text text;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +13,6 @@ public class ScoreLabel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = "Points: " + player.GetComponent<FrogScript>().points.ToString();
+        
     }
 }

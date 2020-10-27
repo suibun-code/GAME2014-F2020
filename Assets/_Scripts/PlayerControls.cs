@@ -35,12 +35,12 @@ public class PlayerControls : MonoBehaviour
                 break;
 
             case Direction.LEFT:
-                target.GetComponent<FrogScript>().Move(new Vector3(target.transform.position.x - 0.5f, target.transform.position.y, target.transform.position.z));
+                target.GetComponent<FrogScript>().Move(new Vector3(target.transform.position.x - 0.474f, target.transform.position.y, target.transform.position.z));
                 Debug.Log("CLICKED LEFT");
                 break;
 
             case Direction.RIGHT:
-                target.GetComponent<FrogScript>().Move(new Vector3(target.transform.position.x + 0.5f, target.transform.position.y, target.transform.position.z));
+                target.GetComponent<FrogScript>().Move(new Vector3(target.transform.position.x + 0.474f, target.transform.position.y, target.transform.position.z));
                 Debug.Log("CLICKED RIGHT");
                 break;
 
