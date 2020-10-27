@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*
+Source File Name: EnemyScript.cs
+Author: Ramin Amiri
+Date Last Modified: 2020-10-27 12:53PM
+
+Program Description: This script gives functionality to the enemies.
+
+Revision Histroy: Initial.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

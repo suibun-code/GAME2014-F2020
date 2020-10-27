@@ -1014,8 +1014,16 @@ MonoBehaviour:
 
 
     Win the game by getting your character to the end of
-    the level. Avoid or defeat enemies in your path and do not reach 0 health. Collected
-    pick-ups for points & bonuses.
+    the level; the very top of the screen. Avoid enemies and dangerous static objects
+    in your in your path, as they both deal damage--and do not reach 0 health or
+    you will lose the game. Collected pick-ups for points (crystals).
+
+
+    Tip:
+    You only take damage once you enter a static object. You do not take more for
+    entering another one without leaving the current one! Be careful of the dynamic
+    enemies (slimes), as they can bounce off of you mutliple times, effectively killing
+    you very quickly!
 
 
 '

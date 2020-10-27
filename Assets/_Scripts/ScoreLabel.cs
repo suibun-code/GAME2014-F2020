@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*
+Source File Name: ScoreLabel.cs
+Author: Ramin Amiri
+Date Last Modified: 2020-10-27 12:53PM
+
+Program Description: This script updates the score text with relevant information.
+
+Revision Histroy: Initial.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;

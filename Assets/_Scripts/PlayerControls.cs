@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*
+Source File Name: PlayerControls.cs
+Author: Ramin Amiri
+Date Last Modified: 2020-10-27 12:53PM
+
+Program Description: This script updates the position of the player with the relevant button is clicked.
+
+Revision Histroy: Initial.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
