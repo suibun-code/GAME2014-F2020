@@ -54,9 +54,9 @@ public class FrogScript : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, -4.75f, transform.position.z);
         }
-        if (transform.position.y >= 5.25f)
+        if (transform.position.y >= 4.55f)
         {
-            transform.position = new Vector3(transform.position.x, 4.75f, transform.position.z);
+            SceneManager.LoadScene("End");
         }
     }
 
